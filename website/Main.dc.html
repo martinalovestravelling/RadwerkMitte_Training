@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:wght@600;700;900&family=JetBrains+Mono:wght@600;700&display=swap">
 <style>
 body{margin:0;background:#ffffff;color:#0a1424;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
 a{color:#1f5fbf}
@@ -18,17 +18,17 @@ a:hover{color:#174a96}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:700 16px/20px 'Plus Jakarta Sans';border-radius:999px;padding:12px 24px;min-height:44px;text-decoration:none;border:2px solid transparent;cursor:pointer;box-sizing:border-box}
 .btn-primary{background:#1f5fbf;color:#ffffff}
 .btn-primary:hover{background:#174a96}
-.btn-accent{background:#ff6b4a;color:#0a1424}
-.btn-accent:hover{background:#e8553a}
+.btn-accent{background:#c9971a;color:#0a1424}
+.btn-accent:hover{background:#a67b12}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #1f5fbf;outline-offset:2px}
 .input{font:400 16px/24px 'Plus Jakarta Sans';border:1px solid #8593a8;border-radius:8px;padding:10px 14px;background:#ffffff;color:#0a1424;min-height:44px;box-sizing:border-box;width:100%}
-.display{font-weight:800;font-size:clamp(36px,5vw + 1rem,56px);line-height:1.1;letter-spacing:-0.02em;color:#0a1424;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
-.h2{font-weight:700;font-size:clamp(24px,2vw + 1rem,30px);line-height:1.25;color:#0a1424;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
-.h3{font:700 19px/26px 'Plus Jakarta Sans';color:#0a1424}
+.display{font-weight:700;font-size:clamp(36px,5vw + 1rem,56px);line-height:1.15;letter-spacing:0;color:#0a1424;font-family:'Fraunces',Georgia,'Times New Roman',serif}
+.h2{font-weight:700;font-size:clamp(24px,2vw + 1rem,30px);line-height:1.3;color:#0a1424;font-family:'Fraunces',Georgia,'Times New Roman',serif}
+.h3{font-weight:700;font-size:19px;line-height:26px;color:#0a1424;font-family:'Fraunces',Georgia,'Times New Roman',serif}
 .lead{font:400 19px/30px 'Plus Jakarta Sans';color:#0a1424}
 .body-text{font:400 16px/26px 'Plus Jakarta Sans';color:#0a1424}
 .small-text{font:500 14px/20px 'Plus Jakarta Sans';color:#4a5668}
-.eyebrow{font:700 13px/18px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:#1f5fbf;margin:0 0 8px}
+.eyebrow{font:700 13px/18px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:#7a5c0e;margin:0 0 8px}
 .skip-link{position:absolute;left:-9999px;top:0;background:#1f5fbf;color:#fff;padding:12px 20px;border-radius:0 0 8px 0;z-index:100;text-decoration:none;font:700 15px/20px 'Plus Jakarta Sans'}
 .skip-link:focus{left:0}
 .glow-panel{background-color:#0a1424;color:#f1f5fb;border-radius:24px;padding:clamp(24px,3vw + 0.5rem,32px);background-image:linear-gradient(rgba(92,200,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(92,200,255,.08) 1px,transparent 1px);background-size:24px 24px;box-sizing:border-box}
@@ -98,9 +98,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </div>
 </section>
 
-<section style="background:#f3f6fa;padding:clamp(32px,6vw,56px) 0">
+<section style="background:#efede9;padding:clamp(32px,6vw,56px) 0">
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,32px);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
     <div>
+      <div style="width:48px;height:3px;background:#c9971a;border-radius:2px;margin-bottom:10px"></div>
       <p class="h3" style="margin:0">Seit 1989 in Kassel</p>
       <p class="small-text" style="margin:4px 0 0">2 Filialen mit Werkstatt – Kassel &amp; Göttingen</p>
     </div>
@@ -170,7 +171,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,32px)">
     <h2 class="h2" style="margin:0 0 32px">Für wen wir da sind</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px">
-      <div class="card" style="outline:2px solid #1f5fbf">
+      <div class="card" style="outline:2px solid #c9971a">
         <div class="card-photo">Foto: Team Klinikum mit Diensträdern</div>
         <div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex:1">
           <h3 class="h3" style="margin:0">Für Arbeitgeber</h3>
@@ -212,7 +213,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 <section id="werkstatt" style="padding:clamp(48px,8vw,96px) 0">
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,32px)">
-    <span class="small-text" style="display:inline-block;border:1px solid #8593a8;border-radius:999px;padding:4px 14px;margin-bottom:16px">Konzept – Umfang laut Kurzfassung, mit Radwerk abzustimmen</span>
+    <span class="small-text" style="display:inline-block;background:#efede9;border:1px solid #817d76;color:#5c584f;border-radius:999px;padding:4px 14px;margin-bottom:16px">Konzept – Umfang laut Kurzfassung, mit Radwerk abzustimmen</span>
     <h2 class="h2" style="margin:0 0 32px">Werkstatt in Kassel &amp; Göttingen</h2>
     <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:stretch">
       <div style="flex:1 1 360px;min-width:280px;display:flex;flex-direction:column;gap:24px">
@@ -241,7 +242,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   </div>
 </section>
 
-<section id="shop" style="background:#f3f6fa;padding:clamp(48px,8vw,96px) 0">
+<section id="shop" style="background:#efede9;padding:clamp(48px,8vw,96px) 0">
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,32px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
     <div style="flex:1 1 360px;min-width:260px">
       <h2 class="h2" style="margin:0 0 12px">E-Bikes &amp; aktuelle Räder</h2>
@@ -348,17 +349,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
       <p class="small-text" style="color:#a9b6c8;margin:0">Fahrräder, E-Bikes und Werkstatt in Kassel und Göttingen.</p>
     </div>
     <div>
-      <h3 style="font:700 15px/20px 'Plus Jakarta Sans';margin:0 0 12px;color:#f1f5fb">Standort Kassel</h3>
+      <h3 style="font:700 15px/20px 'Fraunces',Georgia,serif;margin:0 0 12px;color:#f1f5fb">Standort Kassel</h3>
       <p class="small-text" style="color:#a9b6c8;margin:0 0 4px">Wilhelmshöher Allee 112<br>34121 Kassel</p>
       <p class="small-text" style="color:#a9b6c8;margin:0">Mo–Fr 9–18 Uhr · Sa 9–14 Uhr</p>
     </div>
     <div>
-      <h3 style="font:700 15px/20px 'Plus Jakarta Sans';margin:0 0 12px;color:#f1f5fb">Standort Göttingen</h3>
+      <h3 style="font:700 15px/20px 'Fraunces',Georgia,serif;margin:0 0 12px;color:#f1f5fb">Standort Göttingen</h3>
       <p class="small-text" style="color:#a9b6c8;margin:0 0 4px">Groner Landstraße 48<br>37081 Göttingen</p>
       <p class="small-text" style="color:#a9b6c8;margin:0">Mo–Fr 9–18 Uhr · Sa 9–14 Uhr</p>
     </div>
     <div>
-      <h3 style="font:700 15px/20px 'Plus Jakarta Sans';margin:0 0 12px;color:#f1f5fb">Kontakt</h3>
+      <h3 style="font:700 15px/20px 'Fraunces',Georgia,serif;margin:0 0 12px;color:#f1f5fb">Kontakt</h3>
       <p class="small-text" style="color:#a9b6c8;margin:0 0 4px"><a href="tel:+495614002210" style="color:#5cc8ff">0561 40022-10</a></p>
       <p class="small-text" style="color:#a9b6c8;margin:0"><a href="mailto:info@radwerk-mitte.de" style="color:#5cc8ff">info@radwerk-mitte.de</a></p>
     </div>
