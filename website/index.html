@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radwerk Mitte – Fahrräder, E-Bikes &amp; Dienstrad-Leasing in Kassel &amp; Göttingen</title>
+<meta name="description" content="Radwerk Mitte: Fahrräder, E-Bikes und Werkstatt in Kassel und Göttingen. Dienstrad-Leasing für Unternehmen – unverbindlich berechnen und anfragen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:wght@600;700;900&family=JetBrains+Mono:wght@600;700&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#ffffff;color:#0a1424;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+a{color:#1f5fbf}
+a:hover{color:#174a96}
+.nav-link{font:600 15px/20px 'Plus Jakarta Sans';color:#0a1424;text-decoration:none}
+.nav-link:hover{color:#1f5fbf}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:700 16px/20px 'Plus Jakarta Sans';border-radius:999px;padding:12px 24px;min-height:44px;text-decoration:none;border:2px solid transparent;cursor:pointer;box-sizing:border-box}
+.btn-primary{background:#1f5fbf;color:#ffffff}
+.btn-primary:hover{background:#174a96}
+.btn-accent{background:#c9971a;color:#0a1424}
+.btn-accent:hover{background:#a67b12}
+.btn-pill{border-radius:999px;padding:10px 18px;font:700 14px/20px 'Plus Jakarta Sans';border-width:2px;border-style:solid;cursor:pointer;min-height:44px;background:#ffffff;color:#0a1424;border-color:#8593a8}
+.btn-pill[aria-pressed="true"]{background:#1f5fbf;color:#ffffff;border-color:#1f5fbf}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #1f5fbf;outline-offset:2px}
+.input{font:400 16px/24px 'Plus Jakarta Sans';border:1px solid #8593a8;border-radius:8px;padding:10px 14px;background:#ffffff;color:#0a1424;min-height:44px;box-sizing:border-box;width:100%}
+.display{font-weight:700;font-size:clamp(36px,5vw + 1rem,56px);line-height:1.15;color:#0a1424;font-family:'Fraunces',Georgia,'Times New Roman',serif;margin:0}
+.h2{font-weight:700;font-size:clamp(24px,2vw + 1rem,30px);line-height:1.3;color:#0a1424;font-family:'Fraunces',Georgia,'Times New Roman',serif;margin:0}
+.h3{font-weight:700;font-size:19px;line-height:26px;color:#0a1424;font-family:'Fraunces',Georgia,'Times New Roman',serif;margin:0}
+.lead{font:400 19px/30px 'Plus Jakarta Sans';color:#0a1424;margin:0}
+.body-text{font:400 16px/26px 'Plus Jakarta Sans';color:#0a1424;margin:0}
+.small-text{font:500 14px/20px 'Plus Jakarta Sans';color:#4a5668;margin:0}
+.eyebrow{font:700 13px/18px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:#7a5c0e;margin:0 0 8px}
+.skip-link{position:absolute;left:-9999px;top:0;background:#1f5fbf;color:#fff;padding:12px 20px;border-radius:0 0 8px 0;z-index:100;text-decoration:none;font:700 15px/20px 'Plus Jakarta Sans'}
+.skip-link:focus{left:0}
+.container{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.section{padding:clamp(48px,8vw,96px) 0}
+.glow-panel{background-color:#0a1424;color:#f1f5fb;border-radius:24px;padding:clamp(24px,3vw + 0.5rem,32px);background-image:linear-gradient(rgba(92,200,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(92,200,255,.08) 1px,transparent 1px);background-size:24px 24px}
+.ring{position:relative;width:140px;height:140px;flex-shrink:0;filter:drop-shadow(0 0 20px rgba(92,200,255,.35))}
+.ring-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.ring-val b{font:700 26px/1 'JetBrains Mono';color:#5cc8ff}
+.ring-val span{font:600 11px/16px 'JetBrains Mono';color:#a9b6c8;margin-top:4px}
+.glow-kv{border-left:2px solid #5cc8ff;padding-left:12px}
+.glow-kv small{display:block;font:600 12px/16px 'JetBrains Mono';letter-spacing:.08em;color:#a9b6c8}
+.glow-kv strong{font:700 20px/26px 'JetBrains Mono';color:#f1f5fb}
+.glow-status{border:1px solid #22324d;border-radius:8px;padding:10px 16px;font:600 13px/20px 'JetBrains Mono';color:#f1f5fb;display:flex;gap:10px;align-items:center}
+.glow-dot{width:8px;height:8px;border-radius:50%;background:#5cc8ff;box-shadow:0 0 0 1px rgba(92,200,255,.45),0 0 20px rgba(92,200,255,.35);flex-shrink:0}
+.step-num{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#1f5fbf;color:#fff;font:800 16px/1 'Plus Jakarta Sans';flex-shrink:0}
+.card{background:#ffffff;border-radius:14px;box-shadow:0 1px 2px rgba(10,20,36,.06),0 8px 24px rgba(10,20,36,.08);overflow:hidden;display:flex;flex-direction:column;height:100%}
+.card-photo{height:120px;background:#e8effa;display:flex;align-items:flex-end;padding:12px;font:500 12px/16px 'Plus Jakarta Sans';color:#4a5668}
+.faq-row{border-bottom:1px solid #d5dde8}
+.faq-btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:none;text-align:left;padding:20px 0;cursor:pointer;font:700 17px/24px 'Plus Jakarta Sans';color:#0a1424}
+.faq-chevron{transition:transform .15s;flex-shrink:0;display:inline-flex}
+.faq-btn[aria-expanded="true"] .faq-chevron{transform:rotate(180deg)}
+.faq-answer{margin:0 0 20px;color:#4a5668}
+.faq-answer[hidden]{display:none}
+.badge{display:inline-block;background:#efede9;border:1px solid #817d76;color:#5c584f;border-radius:999px;padding:4px 14px;margin-bottom:16px;font:500 14px/20px 'Plus Jakarta Sans'}
+.b2b-extra{display:flex;gap:20px;flex-wrap:wrap;background:#e8effa;border-radius:8px;padding:16px}
+.b2b-extra[hidden]{display:none}
+.field{display:flex;flex-direction:column;gap:8px}
+.field-label{font:700 14px/20px 'Plus Jakarta Sans';color:#0a1424}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+<header style="position:sticky;top:0;z-index:40;background:#ffffff;border-bottom:1px solid #d5dde8">
+  <div class="container" style="padding-top:12px;padding-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+    <a href="#main" style="font:800 22px/1 'Plus Jakarta Sans';color:#0a1424;text-decoration:none">radwerk <span style="color:#1f5fbf">mitte</span></a>
+    <nav aria-label="Hauptnavigation" style="display:flex;gap:24px;flex-wrap:wrap;align-items:center">
+      <a class="nav-link" href="#arbeitgeber">Für Arbeitgeber</a>
+      <a class="nav-link" href="#beschaeftigte">Für Beschäftigte</a>
+      <a class="nav-link" href="#werkstatt">Werkstatt</a>
+      <a class="nav-link" href="#shop">E-Bikes &amp; Shop</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <a href="tel:+495614002210" style="display:flex;align-items:center;gap:8px;font:600 15px/20px 'Plus Jakarta Sans';color:#0a1424;text-decoration:none">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0561 40022-10
+      </a>
+      <a class="btn btn-primary" href="#kontakt">Angebot anfragen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section">
+  <div class="container" style="display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+    <div style="flex:1 1 480px;min-width:280px;display:flex;flex-direction:column;gap:20px">
+      <div role="group" aria-label="Zielgruppe wählen" style="display:flex;gap:8px;flex-wrap:wrap">
+        <button type="button" class="btn-pill" data-audience="arbeitgeber" aria-pressed="true">Für Arbeitgeber</button>
+        <button type="button" class="btn-pill" data-audience="beschaeftigte" aria-pressed="false">Für Beschäftigte</button>
+        <button type="button" class="btn-pill" data-audience="privat" aria-pressed="false">Privatkunden</button>
+      </div>
+      <p class="eyebrow" id="hero-eyebrow">Für Arbeitgeber</p>
+      <h1 class="display" id="hero-headline">Diensträder für Ihr Team.</h1>
+      <p class="lead" id="hero-lead" style="max-width:560px">Dienstrad-Leasing für Unternehmen in Kassel und Göttingen – mit festem Ansprechpartner und Übergabe direkt in der Filiale.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;padding-top:8px">
+        <a class="btn btn-primary" id="hero-primary" href="#kontakt">Angebot anfragen</a>
+        <a class="btn btn-accent" id="hero-accent" href="#arbeitgeber">Rate berechnen</a>
+      </div>
+    </div>
+    <div style="flex:1 1 420px;min-width:260px">
+      <div style="aspect-ratio:4/3;border-radius:24px;background:#e8effa;display:flex;align-items:flex-end;padding:20px">
+        <span class="small-text">Foto: Team vor der Werkstatt in Kassel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#efede9;padding:clamp(32px,6vw,56px) 0">
+  <div class="container" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+    <div>
+      <div style="width:48px;height:3px;background:#c9971a;border-radius:2px;margin-bottom:10px"></div>
+      <p class="h3">Seit 1989 in Kassel</p>
+      <p class="small-text" style="margin-top:4px">2 Filialen mit Werkstatt – Kassel &amp; Göttingen</p>
+    </div>
+    <div style="display:flex;gap:28px;flex-wrap:wrap">
+      <span class="small-text" style="font-weight:700;color:#0a1424">Klinikum Mitte gGmbH</span>
+      <span class="small-text" style="font-weight:700;color:#0a1424">Stadtverwaltung Kassel</span>
+      <span class="small-text" style="font-weight:700;color:#0a1424">Pflegedienst Nordhessen</span>
+    </div>
+  </div>
+</section>
+
+<section id="arbeitgeber" class="section">
+  <div class="container">
+    <p class="eyebrow">Leasing-Rechner</p>
+    <h2 class="h2" style="margin-bottom:12px">Ihre monatliche Rate – unverbindlich</h2>
+    <p class="body-text" style="max-width:640px;margin-bottom:40px;color:#4a5668">Geben Sie Radpreis und Bruttogehalt ein. Die genauen Leasingkonditionen stimmt Radwerk Mitte mit Ihrem Unternehmen ab – diese Berechnung ist ein unverbindliches Beispiel, keine Steuerberatung.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:stretch">
+      <form id="calc-form" style="flex:1 1 360px;min-width:280px;display:flex;flex-direction:column;gap:20px;background:#ffffff;border:1px solid #d5dde8;border-radius:14px;padding:32px">
+        <div class="field">
+          <label for="radpreis" class="field-label">Radpreis (Brutto-Listenpreis)</label>
+          <input id="radpreis" type="number" min="200" step="50" value="3200" class="input">
+        </div>
+        <div class="field">
+          <label for="gehalt" class="field-label">Monatliches Bruttogehalt</label>
+          <input id="gehalt" type="number" min="0" step="50" value="3800" class="input">
+        </div>
+        <div class="field">
+          <label for="laufzeit" class="field-label">Laufzeit</label>
+          <select id="laufzeit" class="input">
+            <option value="24">24 Monate</option>
+            <option value="36" selected>36 Monate</option>
+            <option value="48">48 Monate</option>
+          </select>
+        </div>
+      </form>
+      <div class="glow-panel" style="flex:1 1 420px;min-width:280px;display:flex;flex-direction:column;gap:20px;justify-content:center">
+        <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+          <div class="ring">
+            <svg viewBox="0 0 150 150" width="140" height="140" aria-hidden="true"><circle cx="75" cy="75" r="64" fill="none" stroke="#22324d" stroke-width="10"></circle><circle id="ring-progress" cx="75" cy="75" r="64" fill="none" stroke="#5cc8ff" stroke-width="10" stroke-linecap="round" stroke-dasharray="273 402" transform="rotate(-90 75 75)"></circle></svg>
+            <div class="ring-val"><b id="calc-nettorate">151 €</b><span>pro Monat</span></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div class="glow-kv"><small>RADPREIS</small><strong id="calc-radpreis">3200 €</strong></div>
+            <div class="glow-kv"><small>LAUFZEIT</small><strong id="calc-laufzeit">36 Monate</strong></div>
+            <div class="glow-kv"><small>ERSPARNIS GGÜ. KAUF</small><strong id="calc-ersparnis">ca. 32 %</strong></div>
+          </div>
+        </div>
+        <div class="glow-status"><span class="glow-dot" aria-hidden="true"></span>Unverbindliche Beispielrechnung · Ihr Angebot erstellt Dilan Aydın</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="beschaeftigte" class="section" style="background:#f3f6fa">
+  <div class="container">
+    <h2 class="h2" style="margin-bottom:40px">So funktioniert's</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px">
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="step-num">1</span><h3 class="h3">Anfrage stellen</h3><p class="small-text">Firmengröße und Bedarf angeben – Antwort innerhalb eines Werktags.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="step-num">2</span><h3 class="h3">Angebot erhalten</h3><p class="small-text">Klare Konditionen für Ihr Team, ohne Kleingedrucktes.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="step-num">3</span><h3 class="h3">Rad aussuchen</h3><p class="small-text">Beschäftigte fahren in Kassel oder Göttingen Probe.</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><span class="step-num">4</span><h3 class="h3">Übergabe vor Ort</h3><p class="small-text">Fertig montiert, geprüft und erklärt in Ihrer Filiale.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="h2" style="margin-bottom:32px">Für wen wir da sind</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px">
+      <div class="card" style="outline:2px solid #c9971a">
+        <div class="card-photo">Foto: Team Klinikum mit Diensträdern</div>
+        <div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex:1">
+          <h3 class="h3">Für Arbeitgeber</h3>
+          <p class="small-text" style="flex:1">Klares Angebot, feste Termine, ein Ansprechpartner vor Ort.</p>
+          <a href="#kontakt" style="font:700 15px/20px 'Plus Jakarta Sans';text-decoration:none">Angebot anfragen →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-photo">Foto: Pendlerin am Morgen</div>
+        <div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex:1">
+          <h3 class="h3">Für Beschäftigte</h3>
+          <p class="small-text" style="flex:1">Monatsrate berechnen und Ablauf verstehen.</p>
+          <a href="#arbeitgeber" style="font:700 15px/20px 'Plus Jakarta Sans';text-decoration:none">Rate berechnen →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-photo">Foto: Werkstatt Kassel</div>
+        <div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex:1">
+          <h3 class="h3">Werkstatt</h3>
+          <p class="small-text" style="flex:1">Termin online buchen, Status selbst abfragen.</p>
+          <a href="#werkstatt" style="font:700 15px/20px 'Plus Jakarta Sans';text-decoration:none">Termin wählen →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#e8effa;padding:clamp(48px,8vw,96px) 0">
+  <div style="max-width:800px;margin:0 auto;padding:0 clamp(16px,4vw,32px)">
+    <blockquote style="margin:0;padding:0;border:none">
+      <p class="h3" style="margin-bottom:20px;font-size:21px;line-height:30px">„Die Umstellung auf Dienstrad-Leasing lief unkompliziert. Unser Team wurde in der Filiale in Kassel beraten, die Übergabe hat einwandfrei geklappt.“</p>
+      <footer style="display:flex;flex-direction:column;gap:2px">
+        <strong class="body-text" style="font-weight:700">Jana Richter</strong>
+        <span class="small-text">Personalabteilung, Klinikum Mitte gGmbH (Beispielkunde)</span>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="werkstatt" class="section">
+  <div class="container">
+    <span class="badge">Konzept – Umfang laut Kurzfassung, mit Radwerk abzustimmen</span>
+    <h2 class="h2" style="margin-bottom:32px">Werkstatt in Kassel &amp; Göttingen</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:stretch">
+      <div style="flex:1 1 360px;min-width:280px;display:flex;flex-direction:column;gap:24px">
+        <p class="body-text" style="color:#4a5668">Online-Termin in drei Schritten, mit Bestätigung und Erinnerung.</p>
+        <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px">
+          <li style="display:flex;gap:16px"><span class="step-num">1</span><div><h3 class="h3" style="margin-bottom:4px">Anliegen wählen</h3><p class="small-text">Inspektion, Reparatur oder Reifenwechsel.</p></div></li>
+          <li style="display:flex;gap:16px"><span class="step-num">2</span><div><h3 class="h3" style="margin-bottom:4px">Termin wählen</h3><p class="small-text">Freie Zeiten in Kassel oder Göttingen.</p></div></li>
+          <li style="display:flex;gap:16px"><span class="step-num">3</span><div><h3 class="h3" style="margin-bottom:4px">Bestätigung erhalten</h3><p class="small-text">Per E-Mail, inklusive Erinnerung vor dem Termin.</p></div></li>
+        </ol>
+        <a class="btn btn-accent" href="#kontakt" style="align-self:flex-start">Termin wählen</a>
+      </div>
+      <div class="glow-panel" style="flex:1 1 360px;min-width:280px;display:flex;flex-direction:column;gap:20px;justify-content:center">
+        <p style="margin:0;font:600 12px/16px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:#a9b6c8">Statusabfrage</p>
+        <form id="status-form" style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+          <div style="display:flex;flex-direction:column;gap:6px;flex:1 1 180px">
+            <label for="auftrag" style="font:600 12px/16px 'JetBrains Mono';letter-spacing:.08em;color:#a9b6c8;text-transform:uppercase">Auftragsnummer</label>
+            <input id="auftrag" type="text" placeholder="z. B. W-2026-114" style="background:#13213a;border:1px solid #22324d;border-radius:8px;color:#f1f5fb;padding:10px 12px;font:600 15px/20px 'Plus Jakarta Sans';min-height:44px;box-sizing:border-box">
+          </div>
+          <button type="submit" class="btn btn-accent">Status abfragen</button>
+        </form>
+        <div class="glow-status" id="status-result" hidden><span class="glow-dot" aria-hidden="true"></span>Abholbereit ab Donnerstag · Beispielstatus</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" style="background:#efede9;padding:clamp(48px,8vw,96px) 0">
+  <div class="container" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
+    <div style="flex:1 1 360px;min-width:260px">
+      <h2 class="h2" style="margin-bottom:12px">E-Bikes &amp; aktuelle Räder</h2>
+      <p class="body-text" style="max-width:560px;color:#4a5668">Das vollständige Sortiment mit Preisen und Verfügbarkeit finden Sie in unserem externen Onlineshop. Beratung, Probefahrt und Abholung bleiben in Kassel und Göttingen.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+      <a class="btn btn-primary" href="#shop">Zum Onlineshop (extern) ↗</a>
+      <span class="small-text">Platzhalter – Shop-Adresse folgt</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div style="max-width:800px;margin:0 auto;padding:0 clamp(16px,4vw,32px)">
+    <h2 class="h2" style="margin-bottom:28px">Häufige Fragen</h2>
+    <div style="border-top:1px solid #d5dde8">
+      <div class="faq-row">
+        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-1">
+          <span>Wie funktioniert Dienstrad-Leasing bei Radwerk Mitte?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        </button>
+        <p class="body-text faq-answer" id="faq-a-1" hidden>Ihr Unternehmen least das Rad über Gehaltsumwandlung, Radwerk Mitte liefert, montiert und übergibt es in Kassel oder Göttingen. Die genauen Konditionen stimmen wir mit Ihrem Unternehmen ab.</p>
+      </div>
+      <div class="faq-row">
+        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-2">
+          <span>Welche Räder kann ich leasen?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        </button>
+        <p class="body-text faq-answer" id="faq-a-2" hidden>Alle Modelle aus unserem Sortiment, einschließlich E-Bikes. Eine aktuelle Übersicht finden Sie in unserem Onlineshop.</p>
+      </div>
+      <div class="faq-row">
+        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-3">
+          <span>Was passiert bei Diebstahl oder Schaden?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        </button>
+        <p class="body-text faq-answer" id="faq-a-3" hidden>Das Leasing-Rad ist in der Regel über die Leasinggesellschaft versichert. Wir unterstützen Sie bei der Schadensmeldung und kümmern uns um die Reparatur.</p>
+      </div>
+      <div class="faq-row">
+        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-4">
+          <span>Wie lange dauert eine Werkstatt-Reparatur?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        </button>
+        <p class="body-text faq-answer" id="faq-a-4" hidden>Das hängt vom Umfang ab. Nach der Annahme nennen wir Ihnen einen konkreten Termin und melden uns, falls sich etwas verzögert.</p>
+      </div>
+      <div class="faq-row">
+        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-5">
+          <span>Haben Sie auch einen Onlineshop?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        </button>
+        <p class="body-text faq-answer" id="faq-a-5" hidden>Ja, unser Sortiment finden Sie in unserem externen Onlineshop. Beratung und Abholung bleiben in Kassel und Göttingen.</p>
+      </div>
+      <div class="faq-row">
+        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-6">
+          <span>Wie bekommt mein Unternehmen ein Angebot?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        </button>
+        <p class="body-text faq-answer" id="faq-a-6" hidden>Über das Anfrageformular mit Kategorie „B2B-Angebot“. Unser B2B-Team meldet sich in der Regel innerhalb eines Werktags.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="section" style="background:#f3f6fa">
+  <div style="max-width:720px;margin:0 auto;padding:0 clamp(16px,4vw,32px)">
+    <h2 class="h2" style="margin-bottom:12px">Anfrage senden</h2>
+    <p class="body-text" style="margin-bottom:28px;color:#4a5668">Wählen Sie Ihr Anliegen – wir leiten Ihre Anfrage an die zuständige Person weiter und melden uns in der Regel innerhalb eines Werktags.</p>
+
+    <div id="kontakt-success" style="background:#ffffff;border:1px solid #d5dde8;border-radius:14px;padding:32px;display:flex;gap:16px;align-items:flex-start" hidden>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1c7a4b" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><circle cx="12" cy="12" r="10"></circle><path d="M8 12l3 3 5-6"></path></svg>
+      <div>
+        <h3 class="h3" style="margin-bottom:8px">Vielen Dank für Ihre Anfrage</h3>
+        <p class="body-text" style="color:#4a5668">Wir melden uns in der Regel innerhalb eines Werktags bei Ihnen.</p>
+      </div>
+    </div>
+
+    <form id="kontakt-form" style="background:#ffffff;border:1px solid #d5dde8;border-radius:14px;padding:32px;display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div class="field" style="flex:1 1 220px">
+          <label for="kname" class="field-label">Name</label>
+          <input id="kname" name="name" type="text" required class="input">
+        </div>
+        <div class="field" style="flex:1 1 220px">
+          <label for="kemail" class="field-label">E-Mail</label>
+          <input id="kemail" name="email" type="email" required class="input">
+        </div>
+      </div>
+      <div class="field">
+        <label for="kkategorie" class="field-label">Kategorie *</label>
+        <select id="kkategorie" name="kategorie" required class="input">
+          <option value="">Bitte wählen</option>
+          <option value="B2B-Angebot">B2B-Angebot</option>
+          <option value="Werkstatt">Werkstatt</option>
+          <option value="Bestellung">Bestellung</option>
+          <option value="Sonstiges">Sonstiges</option>
+        </select>
+      </div>
+      <div class="b2b-extra" id="b2b-extra" hidden>
+        <div class="field" style="flex:1 1 220px">
+          <label for="kfirma" class="field-label">Firmengröße</label>
+          <select id="kfirma" name="firmengroesse" class="input">
+            <option>1–9 Beschäftigte</option>
+            <option>10–49 Beschäftigte</option>
+            <option>50–249 Beschäftigte</option>
+            <option>250+ Beschäftigte</option>
+          </select>
+        </div>
+        <div class="field" style="flex:1 1 220px">
+          <label for="kbedarf" class="field-label">Voraussichtlicher Bedarf (Anzahl Räder)</label>
+          <input id="kbedarf" name="bedarf" type="number" min="1" class="input">
+        </div>
+      </div>
+      <div class="field">
+        <label for="knachricht" class="field-label">Nachricht</label>
+        <textarea id="knachricht" name="nachricht" rows="4" required class="input" style="resize:vertical"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="align-self:flex-start">Anfrage absenden</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer style="background:#0a1424;color:#f1f5fb;padding:clamp(48px,8vw,80px) 0 0">
+  <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px">
+    <div>
+      <p style="font:800 20px/1 'Plus Jakarta Sans';margin:0 0 12px">radwerk <span style="color:#5cc8ff">mitte</span></p>
+      <p class="small-text" style="color:#a9b6c8">Fahrräder, E-Bikes und Werkstatt in Kassel und Göttingen.</p>
+    </div>
+    <div>
+      <h3 style="font:700 15px/20px 'Fraunces',Georgia,serif;margin:0 0 12px;color:#f1f5fb">Standort Kassel</h3>
+      <p class="small-text" style="color:#a9b6c8;margin-bottom:4px">Wilhelmshöher Allee 112<br>34121 Kassel</p>
+      <p class="small-text" style="color:#a9b6c8">Mo–Fr 9–18 Uhr · Sa 9–14 Uhr</p>
+    </div>
+    <div>
+      <h3 style="font:700 15px/20px 'Fraunces',Georgia,serif;margin:0 0 12px;color:#f1f5fb">Standort Göttingen</h3>
+      <p class="small-text" style="color:#a9b6c8;margin-bottom:4px">Groner Landstraße 48<br>37081 Göttingen</p>
+      <p class="small-text" style="color:#a9b6c8">Mo–Fr 9–18 Uhr · Sa 9–14 Uhr</p>
+    </div>
+    <div>
+      <h3 style="font:700 15px/20px 'Fraunces',Georgia,serif;margin:0 0 12px;color:#f1f5fb">Kontakt</h3>
+      <p class="small-text" style="color:#a9b6c8;margin-bottom:4px"><a href="tel:+495614002210" style="color:#5cc8ff">0561 40022-10</a></p>
+      <p class="small-text" style="color:#a9b6c8"><a href="mailto:info@radwerk-mitte.de" style="color:#5cc8ff">info@radwerk-mitte.de</a></p>
+    </div>
+  </div>
+  <div class="container" style="margin-top:32px;padding-top:24px;padding-bottom:24px;border-top:1px solid #22324d;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
+    <p class="small-text" style="color:#a9b6c8">Diese Website misst Zugriffe anonymisiert und datenschutzkonform.</p>
+    <div style="display:flex;gap:24px">
+      <a href="#" style="color:#a9b6c8;font-size:14px">Impressum</a>
+      <a href="#" style="color:#a9b6c8;font-size:14px">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // Zielgruppen-Schalter (Hero)
+  var heroByAudience = {
+    arbeitgeber: {
+      eyebrow: "Für Arbeitgeber",
+      headline: "Diensträder für Ihr Team.",
+      lead: "Dienstrad-Leasing für Unternehmen in Kassel und Göttingen – mit festem Ansprechpartner und Übergabe direkt in der Filiale.",
+      primaryLabel: "Angebot anfragen",
+      primaryHref: "#kontakt",
+      accentLabel: "Rate berechnen",
+      accentHref: "#arbeitgeber"
+    },
+    beschaeftigte: {
+      eyebrow: "Für Beschäftigte",
+      headline: "Ihr neues Rad – günstiger über den Arbeitgeber.",
+      lead: "Berechnen Sie Ihre monatliche Rate und erfahren Sie, wie Sie Ihr Unternehmen für Dienstrad-Leasing gewinnen.",
+      primaryLabel: "Rate berechnen",
+      primaryHref: "#arbeitgeber",
+      accentLabel: "So funktioniert's",
+      accentHref: "#beschaeftigte"
+    },
+    privat: {
+      eyebrow: "Privatkunden",
+      headline: "Räder, Service und Werkstatt vor Ort.",
+      lead: "Beratung, Probefahrt und Reparatur in Kassel und Göttingen – unser externer Onlineshop zeigt die aktuelle Auswahl.",
+      primaryLabel: "Zum Onlineshop",
+      primaryHref: "#shop",
+      accentLabel: "Termin in der Werkstatt",
+      accentHref: "#werkstatt"
+    }
+  };
+
+  var pills = document.querySelectorAll(".btn-pill");
+  var heroEyebrow = document.getElementById("hero-eyebrow");
+  var heroHeadline = document.getElementById("hero-headline");
+  var heroLead = document.getElementById("hero-lead");
+  var heroPrimary = document.getElementById("hero-primary");
+  var heroAccent = document.getElementById("hero-accent");
+
+  function setAudience(id) {
+    var hero = heroByAudience[id];
+    if (!hero) return;
+    heroEyebrow.textContent = hero.eyebrow;
+    heroHeadline.textContent = hero.headline;
+    heroLead.textContent = hero.lead;
+    heroPrimary.textContent = hero.primaryLabel;
+    heroPrimary.setAttribute("href", hero.primaryHref);
+    heroAccent.textContent = hero.accentLabel;
+    heroAccent.setAttribute("href", hero.accentHref);
+    pills.forEach(function (p) {
+      p.setAttribute("aria-pressed", p.dataset.audience === id ? "true" : "false");
+    });
+  }
+
+  pills.forEach(function (p) {
+    p.addEventListener("click", function () {
+      setAudience(p.dataset.audience);
+    });
+  });
+
+  // Leasing-Rechner (unverbindliche Beispielrechnung, Platzhalter-Formel)
+  var radpreisInput = document.getElementById("radpreis");
+  var gehaltInput = document.getElementById("gehalt");
+  var laufzeitSelect = document.getElementById("laufzeit");
+  var ringProgress = document.getElementById("ring-progress");
+  var calcNettorate = document.getElementById("calc-nettorate");
+  var calcRadpreis = document.getElementById("calc-radpreis");
+  var calcLaufzeit = document.getElementById("calc-laufzeit");
+  var calcErsparnis = document.getElementById("calc-ersparnis");
+
+  function updateCalc() {
+    var radpreis = Math.max(200, Number(radpreisInput.value) || 0);
+    var gehalt = Math.max(0, Number(gehaltInput.value) || 0);
+    var laufzeit = Number(laufzeitSelect.value) || 36;
+    var bruttorate = radpreis / laufzeit;
+    var faktor = gehalt >= 4500 ? 0.62 : gehalt >= 3000 ? 0.68 : 0.75;
+    var nettorate = Math.round(bruttorate * faktor);
+    var ersparnis = Math.round((1 - faktor) * 100);
+    var dashLen = Math.round(Math.max(0.1, Math.min(0.95, faktor)) * 402);
+
+    ringProgress.setAttribute("stroke-dasharray", dashLen + " 402");
+    calcNettorate.textContent = nettorate + " €";
+    calcRadpreis.textContent = radpreis + " €";
+    calcLaufzeit.textContent = laufzeit + " Monate";
+    calcErsparnis.textContent = "ca. " + ersparnis + " %";
+  }
+
+  radpreisInput.addEventListener("input", updateCalc);
+  gehaltInput.addEventListener("input", updateCalc);
+  laufzeitSelect.addEventListener("change", updateCalc);
+  document.getElementById("calc-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+  });
+  updateCalc();
+
+  // FAQ-Akkordeon
+  document.querySelectorAll(".faq-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      var answer = document.getElementById(btn.getAttribute("aria-controls"));
+      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      if (answer) answer.hidden = expanded;
+    });
+  });
+
+  // Werkstatt-Statusabfrage (Beispielstatus, Konzept laut Kurzfassung)
+  document.getElementById("status-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("status-result").hidden = false;
+  });
+
+  // Anfrageformular
+  var kategorieSelect = document.getElementById("kkategorie");
+  var b2bExtra = document.getElementById("b2b-extra");
+  kategorieSelect.addEventListener("change", function () {
+    b2bExtra.hidden = kategorieSelect.value !== "B2B-Angebot";
+  });
+
+  document.getElementById("kontakt-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    e.target.hidden = true;
+    document.getElementById("kontakt-success").hidden = false;
+  });
+})();
+</script>
+</body>
+</html>
